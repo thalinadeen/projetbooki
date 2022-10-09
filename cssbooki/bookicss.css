@@ -1,0 +1,1365 @@
+*::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-size-adjust: auto;
+}
+
+body {
+    font-family: 'Raleway';
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.logo {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+}
+
+#linknav {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    float: right;
+}
+
+.Activités {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+}
+
+.Hébergements {
+    margin: 0;
+    text-align: center;
+    width: 50%;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    height: 40px;
+    padding: 40px 0 0 0;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+/* searchbar css */
+form {
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+
+}
+
+.fa-location-dot {
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+input {
+    border: none;
+    padding: 10px;
+}
+
+::placeholder {
+    font-family: 'Raleway';
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.icon {
+    display: none;
+}
+
+.submit {
+    display: inline-block;
+    background-color: #0065FC;
+    border: none;
+    padding: 14px;
+    border-radius: 0 12px 12px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 43px;
+}
+
+.submit:hover {
+    background-color: #F2F2F2;
+    color: #0065FC;
+    transition: all .3s ease-in-out;
+}
+
+/* filter css */
+#filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.boutton {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+
+#filter h3 {
+    margin-right: 40px;
+}
+
+.fa-money-bill-wave {
+    background-color: #DEEBFF;
+    font-size: 15px;
+    color: #0065FC;
+    padding: 15px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-170%, -50%);
+}
+
+#filter button:nth-child(1) {
+    text-decoration: none;
+    border: 2px solid #F2F2F2;
+    background: none;
+    font-family: 'Raleway';
+    font-size: 15px;
+    padding: 10px 15px 10px 50px;
+    color: black;
+    font-weight: bold;
+    border-radius: 70px;
+    cursor: pointer;
+    position: relative;
+}
+
+#filter button:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.fa-child-reaching {
+    background-color: #DEEBFF;
+    font-size: 15px;
+    color: #0065FC;
+    padding: 15px 18px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -50%);
+}
+
+#filter button:nth-child(2) {
+    text-decoration: none;
+    border: 2px solid #F2F2F2;
+    background: none;
+    font-family: 'Raleway';
+    font-size: 15px;
+    padding: 10px 15px 10px 50px;
+    color: black;
+    font-weight: bold;
+    border-radius: 70px;
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-heart {
+    background-color: #DEEBFF;
+    font-size: 15px;
+    color: #0065FC;
+    padding: 15px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180%, -50%);
+}
+
+#filter button:nth-child(3) {
+    text-decoration: none;
+    border: 2px solid #F2F2F2;
+    background: none;
+    font-family: 'Raleway';
+    font-size: 15px;
+    padding: 10px 15px 10px 50px;
+    color: black;
+    font-weight: bold;
+    border-radius: 70px;
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-dog {
+    background-color: #DEEBFF;
+    font-size: 15px;
+    color: #0065FC;
+    padding: 15px;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-220%, -50%);
+}
+
+#filter button:nth-child(4) {
+    text-decoration: none;
+    border: 2px solid #F2F2F2;
+    background: none;
+    font-family: 'Raleway';
+    font-size: 15px;
+    padding: 10px 10px 15px 50px;
+    color: black;
+    font-weight: bold;
+    border-radius: 70px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* icon info css */
+.info {
+    border: 2px solid #F2F2F2;
+    padding: 5px 12px;
+    border-radius: 100%;
+    color: #0065FC;
+    font-weight: bold;
+    margin-right: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row {
+    width: 100%;
+}
+
+#box1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+/* cannebière css */
+#Marseille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px;
+    height: 550px;
+}
+
+#Marseille h2 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#affiche {
+    width: 100%;
+    font-weight: bold;
+    margin: 0;
+}
+
+#cannebière,
+#delamer,
+#duport,
+#lesmouettes,
+#chezAmina,
+#lepanier {
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+    padding: 5px 5px 0 5px;
+    border-radius: 20px;
+    width: 30%;
+    height: 200px;
+}
+
+#delamer,
+#chezAmina,
+#lepanier {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cannebière:hover,
+#delamer:hover,
+#duport:hover,
+#lesmouettes:hover,
+#chezAmina:hover,
+#lepanier:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+#cannebière img,
+#duport img,
+#chezAmina img,
+#lepanier img,
+#lesmouettes img,
+#delamer img {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cannebière h4,
+#duport h4,
+#lepanier h4,
+#lesmouettes h4,
+#delamer h4,
+#chezAmina h4 {
+    font-weight: bold;
+    margin: 0 0 5px 10px;
+}
+
+#cannebière p,
+#duport p,
+#lepanier p,
+#lesmouettes p,
+#delamer p,
+#chezAmina p {
+    margin: 0 0 10px 10px;
+}
+
+#cannebière ul,
+#duport ul,
+#chezAmina ul,
+#lepanier ul,
+#lesmouettes ul,
+#delamer ul {
+    padding: 0;
+    margin: 0 0 0 10px;
+    font-size: 10px;
+}
+
+#cannebière ul li,
+#duport ul li,
+#chezAmina ul li,
+#lepanier ul li,
+#lesmouettes ul li,
+#delamer ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: #0065FC;
+}
+
+#cannebière ul li:nth-last-child(1),
+#lesmouettes ul li:nth-last-child(1),
+#lepanier ul li:nth-last-child(1),
+#delamer ul li:nth-last-child(1),
+#delamer ul li:nth-last-child(2) {
+    color: #F2F2F2;
+}
+
+
+/* populaire css */
+#populaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 30px;
+    height: 550px;
+}
+
+#populaire h2 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+
+#star {
+    float: right;
+}
+
+#lesoleildumatin,
+#bleublanc {
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 25px;
+    width: 100%;
+    height: 140px;
+    padding: 5px 20px 5px 5px;
+    margin: 0;
+}
+
+#aucoeur {
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 25px;
+    width: 100%;
+    height: 140px;
+    padding: 5px 20px 5px 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#lesoleildumatin:hover,
+#aucoeur:hover,
+#bleublanc:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+#lesoleildumatin img,
+#aucoeur img,
+#bleublanc img {
+    float: left;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    margin-right: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#lesoleildumatin h4,
+#aucoeur h4,
+#bleublanc h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 5px 10px 0;
+}
+
+#lesoleildumatin p,
+#aucoeur p,
+#bleublanc p {
+    margin: 0 0 50px 0;
+    font-size: x-small;
+}
+
+#lesoleildumatin ul,
+#aucoeur ul,
+#bleublanc ul {
+    font-size: xx-small;
+}
+
+#lesoleildumatin ul li,
+#aucoeur ul li,
+#bleublanc ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: #0065FC;
+}
+
+#aucoeur ul li:nth-last-child(1),
+#bleublanc ul li:nth-last-child(1) {
+    color: #F2F2F2;
+}
+
+/* Activités css */
+#Activités {
+    margin: 50px 0;
+}
+
+#Activités h2 {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#box2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+#block2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10%;
+    height: 400px;
+    width: 25%;
+    border-radius: 25px;
+}
+
+#block1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10%;
+    height: 400px;
+    width: 25%;
+    border-radius: 25px;
+}
+
+#promègue {
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 25px;
+    height: 55%;
+    width: 100%;
+}
+
+#promègue h4,
+#îlesdufrioul h4,
+#longchamp h4,
+#damedelagarde h4 {
+    margin: 10px 0 10px 15px;
+    font-weight: bold;
+}
+
+#vieuxport h4,
+#calanques h4 {
+    margin: 15px;
+    font-weight: bold;
+}
+
+#îlesdufrioul {
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 25px;
+    height: 35%;
+    width: 100%;
+}
+
+#vieuxport,
+#calanques {
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 25px;
+    height: 400px;
+    width: 25%;
+}
+
+#longchamp:hover,
+#damedelagarde:hover,
+#vieuxport:hover,
+#calanques:hover,
+#îlesdufrioul:hover,
+#promègue:hover {
+    box-shadow: 5px 10px 18px #888888;
+}
+
+#longchamp,
+#damedelagarde {
+    background-color: white;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 25px;
+    height: 45%;
+    width: 100%;
+}
+
+#damedelagarde img,
+#longchamp img {
+    height: 70%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+#vieuxport img,
+#calanques img {
+    height: 85%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+#promègue img {
+    height: 80%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+#îlesdufrioul img {
+    height: 70%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Footer css */
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 30px;
+}
+
+.Noshébergements,
+.Assistance {
+    margin-left: 200px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+/* Responsive css */
+@media only screen and (max-width:1135px) {
+    #lesoleildumatin p {
+        margin: 0 0 25px 0;
+    }
+
+}
+
+@media only screen and (max-width:1122px) {
+    #aucoeur p {
+        margin: 0 0 25px 0;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    #box1 {
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width:1103px) {
+    #Marseille {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:1087px) {
+    #bleublanc p {
+        margin: 0 0 35px 0;
+    }
+}
+
+@media only screen and (max-width:1066px) {
+
+    #lesoleildumatin h4,
+    #aucoeur h4,
+    #bleublanc h4 {
+        font-size: x-small;
+    }
+
+    #lesoleildumatin p,
+    #aucoeur p,
+    #bleublanc p {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width:1025px) {
+    #box1 {
+        gap: 15px;
+    }
+
+    #aucoeur p {
+        margin: 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #linknav {
+        width: 30%;
+    }
+
+    #lesoleildumatin h4,
+    #aucoeur h4,
+    #bleublanc h4 {
+        font-size: x-small;
+    }
+
+    #lesoleildumatin ul{
+        margin-top: 35px;
+    }
+    #aucoeur ul,
+    #bleublanc ul {
+        margin-top: 50px;
+    }
+
+
+    #box1 {
+        gap: 10px;
+    }
+
+    #Marseille {
+        width: 60%;
+        gap: 0;
+        justify-content: space-around;
+        height: 600px;
+    }
+
+    #populaire {
+        height: 600px;
+    }
+
+    #populaire h2,
+    #Activités h2 {
+        font-size: 17px;
+    }
+
+    #Marseille h2 {
+        margin: 0 0 10px 0;
+        font-size: 17px;
+    }
+
+    #affiche {
+        margin: 10px 0 0 0;
+    }
+
+    #cannebière,
+    #delamer,
+    #duport,
+    #lesmouettes,
+    #chezAmina,
+    #lepanier {
+        width: 40%;
+        height: 150px;
+    }
+
+    #delamer,
+    #chezAmina,
+    #lepanier {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #cannebière h4,
+    #duport h4,
+    #lepanier h4,
+    #lesmouettes h4,
+    #delamer h4,
+    #chezAmina h4 {
+        font-size: x-small;
+    }
+
+    #cannebière p,
+    #duport p,
+    #lepanier p,
+    #lesmouettes p,
+    #delamer p,
+    #chezAmina p {
+        margin: 0 0 5px 10px;
+    }
+
+    #cannebière p,
+    #duport p,
+    #lepanier p,
+    #lesmouettes p,
+    #delamer p,
+    #chezAmina p {
+        font-size: x-small;
+    }
+
+
+    .Noshébergements,
+    .Assistance {
+        margin-left: 100px;
+    }
+
+    #box2 {
+        column-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 974px){
+    #bleublanc ul {
+            margin-top: 35px;
+        }
+}
+@media only screen and (max-width: 953px) {
+    #aucoeur ul {
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    #aucoeur ul {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 895px) {
+
+    #aucoeur p {
+        margin: 0 0 20px 0;
+    }
+
+}
+
+@media only screen and (max-width: 812px) {
+    .boutton {
+        flex-wrap: wrap;
+    }
+
+    #filter h3 {
+        margin-right: 20px;
+    }
+
+    #linknav {
+        width: 40%;
+    }
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+    .Noshébergements,
+    .Assistance {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    #aucoeur ul {
+            margin-top: 0;
+        }
+}
+
+
+@media only screen and (max-width: 774px) {
+
+    #linknav {
+        width: 40%;
+    }
+
+    .info {
+        float: left;
+        padding: 5px 12px;
+        margin-right: 10px;
+    }
+
+    #filter {
+        flex-direction: column;
+    }
+
+    #filter h3 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #box1 {
+        flex-direction: column-reverse;
+    }
+
+    #populaire {
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 30px;
+    }
+
+    #Marseille h2,
+    #Activités h2 {
+        font-size: 20px
+    }
+
+    #populaire h2 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #lesoleildumatin img,
+    #aucoeur img,
+    #bleublanc img {
+        margin-right: 20px;
+    }
+
+    #lesoleildumatin h4,
+    #aucoeur h4,
+    #bleublanc h4 {
+        font-size: small;
+        margin: 10px 10px 10px 0;
+    }
+
+    #lesoleildumatin p,
+    #bleublanc p,
+    #aucoeur p {
+        font-size: small;
+        margin: 0 0 60px 0;
+    }
+
+    #lesoleildumatin,
+    #bleublanc {
+        width: 100%;
+    }
+
+    #aucoeur {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    #Marseille {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        border-radius: 0;
+        background-color: white;
+        height: auto;
+    }
+
+    #cannebière,
+    #delamer,
+    #duport,
+    #lesmouettes,
+    #chezAmina,
+    #lepanier {
+        width: 45%;
+        height: 200px;
+        box-shadow: 2px 2px 2px 2px #888888;
+    }
+
+    #affiche {
+        font-size: small;
+    }
+
+    #cannebière h4,
+    #duport h4,
+    #lepanier h4,
+    #lesmouettes h4,
+    #delamer h4,
+    #chezAmina h4 {
+        font-size: small;
+        margin: 0 0 5px 10px;
+    }
+
+    #cannebière p,
+    #duport p,
+    #lepanier p,
+    #lesmouettes p,
+    #delamer p,
+    #chezAmina p {
+        font-size: small;
+        margin: 0 0 10px 10px;
+    }
+
+    #cannebière ul,
+    #duport ul,
+    #chezAmina ul,
+    #lepanier ul,
+    #lesmouettes ul,
+    #delamer ul {
+        font-size: x-small;
+    }
+
+    #lesoleildumatin h4,
+    #aucoeur h4,
+    #bleublanc h4,
+    #lesoleildumatin p,
+    #aucoeur p,
+    #bleublanc p {
+        font-size: small;
+    }
+
+    #lesoleildumatin ul,
+    #aucoeur ul,
+    #bleublanc ul {
+        font-size: x-small;
+    }
+
+    #box2 {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    #vieuxport,
+    #calanques {
+        width: 45%;
+    }
+
+    #block1,
+    #block2 {
+        width: 50%;
+    }
+
+    .Noshébergements,
+    .Assistance {
+        margin-left: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 679px) {
+
+    #box2 {
+        column-gap: 5%;
+    }
+
+    #vieuxport,
+    #calanques {
+        width: 45%;
+    }
+
+    #block1,
+    #block2 {
+        width: 50%;
+    }
+
+    footer {
+        padding-left: 10px;
+    }
+
+    footer h4,
+    footer ul {
+        font-size: small;
+    }
+
+    .Noshébergements,
+    .Assistance {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    #aucoeur p {
+        margin: 0 0 40px 0;
+    }
+
+}
+
+@media only screen and (max-width: 541px) {
+    #linknav {
+        width: 50%;
+    }
+
+    .Noshébergements,
+    .Assistance {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:481px) {
+
+    header,
+    main {
+        margin: 0 20px;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #linknav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        float: none;
+    }
+
+    .Activités {
+        margin: 0;
+        width: 50%;
+        text-align: center;
+    }
+
+    .Hébergements {
+        margin: 0;
+        width: 50%;
+        text-align: center;
+    }
+
+    nav a:hover {
+        border-top: 0;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .fa-location-dot {
+        background-color: #F2F2F2;
+        padding: 17px;
+        border-radius: 12px 0 0 12px;
+    }
+
+    .icon {
+        display: inline-block;
+        background-color: #0065FC;
+        border: none;
+        padding: 16px 17px;
+        border-radius: 12px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        background-color: #F2F2F2;
+        color: #0065FC;
+        transition: all .3s ease-in-out;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    #info {
+        margin: 20px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    footer h4 {
+        font-size: small;
+    }
+
+    .Noshébergements,
+    .Assistance {
+        margin-left: 0;
+    }
+
+    footer ul {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 441px) {
+
+    #Marseille {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 0;
+        background-color: unset;
+        padding: 20px 20px 0 20px;
+        border-radius: 0;
+    }
+
+    #cannebière,
+    #delamer,
+    #duport,
+    #lesmouettes,
+    #chezAmina,
+    #lepanier {
+        width: 100%;
+        margin-top: 0;
+        height: 200px;
+        box-shadow: 2px 2px 2px 2px #888888;
+    }
+
+    #delamer,
+    #chezAmina,
+    #lepanier {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #cannebière h4,
+    #duport h4,
+    #lepanier h4,
+    #lesmouettes h4,
+    #delamer h4,
+    #chezAmina h4 {
+        font-size: small;
+    }
+
+    #cannebière p,
+    #duport p,
+    #lepanier p,
+    #lesmouettes p,
+    #delamer p,
+    #chezAmina p {
+        font-size: small;
+    }
+
+    #cannebière ul,
+    #duport ul,
+    #chezAmina ul,
+    #lepanier ul,
+    #lesmouettes ul,
+    #delamer ul {
+        font-size: xx-small;
+    }
+
+    #box2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 0;
+        height: auto;
+    }
+
+    #Activités h2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #vieuxport,
+    #calanques {
+        width: 100%;
+        height: 200px;
+    }
+
+    #block1,
+    #block2 {
+        width: 100%;
+        height: auto;
+        row-gap: 20px;
+    }
+
+    #promègue,
+    #îlesdufrioul,
+    #longchamp,
+    #damedelagarde {
+        height: 200px;
+    }
+
+    #promègue img,
+    #îlesdufrioul img,
+    #longchamp img {
+        height: 70%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #damedelagarde img {
+        height: 70%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    #vieuxport img,
+    #calanques img {
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width:406px) {
+    #bleublanc p {
+        margin: 0 0 40px 0;
+    }
+}
+
+@media only screen and (max-width:399px) {
+    #lesoleildumatin p {
+        margin: 0 0 40px 0;
+    }
+}
